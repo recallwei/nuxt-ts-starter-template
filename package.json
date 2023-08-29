@@ -1,0 +1,37 @@
+{
+  "name": "nuxt-ts-starter-template",
+  "description": "🍀 An opinionated Nuxt.js/TypeScript starter template.",
+  "author": "Bruce Song <recall4056@gmail.com> (https://github.com/recallwei/)",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "npx only-allow pnpm && nuxt prepare",
+    "cspell:check": "cspell \"**\"",
+    "eslint:check": "eslint \"**/*.{ts,tsx,js,jsx,vue}\" --color",
+    "eslint:fix": "pnpm eslint:check --fix",
+    "prettier:check": "prettier --check --ignore-unknown .",
+    "prettier:fix": "prettier --write --ignore-unknown .",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@brucesong/eslint-config-vue": "^1.0.11",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@nuxt/devtools": "latest",
+    "cspell": "^7.1.1",
+    "eslint": "^8.48.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "nuxt": "^3.7.0",
+    "prettier": "^3.0.2"
+  },
+  "packageManager": "pnpm@8.5.0",
+  "engines": {
+    "node": ">=18.17.0",
+    "pnpm": ">=8.5.0"
+  },
+  "private": true,
+  "license": "MIT"
+}
